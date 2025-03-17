@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <script>
+        var a = {
+            "FSD": [
+                {
+                    "Topic": "HTML",
+                    "course": "Beginer",
+                    "content": ["tags", "table", "form"],
+                },
+                {
+                    "Topic": "CSS",
+                    "course": "Beginer",
+                    "content": ["tags", "table", "form"]
+                }
+            ]
+        }
+        for (i in a.FSD) {
+            for (j in a.FSD[i]) {
+                document.write(a.FSD[i][j] + "<br>")
+            }
+        }
+        //or
+        for (i of a.FSD) {
+            document.write(i.Topic + "<br>" + i.course + "<br>" + i.content)
+        }
+
+    </script>
+</head>
+
+</html>

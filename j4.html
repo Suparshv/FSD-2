@@ -1,0 +1,15 @@
+<html>
+<head>
+    <script>
+        function call(){
+            var a='{"name":"ABC","DOB": "1998-03-07"}'
+            var ap=JSON.parse(a)
+            document.getElementById("p1").innerHTML=new Date(ap.DOB)
+        }
+    </script>
+</head>
+<body>
+    <p id="p1">Get Date</p>
+    <button onclick="call()">CLick here</button>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+
+<head>
+    <script>
+        var t = { "name": "test", "age": 21, "subject": ["FSD2", "FCSP2"] }
+        var jstring = JSON.stringify(t)
+        console.log(jstring)
+        console.log(jstring.subject)//undefined-cannot access after converting into string
+        var jobj = JSON.parse(jstring)//parse can be accesed only in string format
+        console.log(jobj)
+        console.log(jobj.name)
+    </script>
+</head>
+
+</html>
