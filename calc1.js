@@ -1,0 +1,5 @@
+var test = require('./calc')
+console.log("Addition is:" + test.add(1, 1))
+console.log("Substraction is:"+test.sub(1,2))
+console.log("Multiplication is:"+test.mul(5,2))
+console.log("Division is:"+test.div(6,2))
