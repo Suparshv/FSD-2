@@ -1,0 +1,16 @@
+const cp = require('cookie-parser')
+const express = require("express")
+const app = express()
+app.use(cp())
+app.use(express.static(__dirname, { index: "c2.html" }))
+app.get("/next", (req, res) => {
+    res.cookie("Fname",req.query.fn)
+    res.cookie("Lname", req.query.ln)
+    res.cookie("Password", req.query.pw)
+    res.redirect("/admin")
+})
+app.get("/admin", (req, res) => {
+    res.clearCookie("Lname")
+    res.send(`Welcome ${req.cookies.Fname} ${req.cookies.Lname} and password:${req.cookies.Password}`)
+})
+app.listen(7007)
