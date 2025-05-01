@@ -1,0 +1,57 @@
+html
+    head
+        title first
+    body
+        h1 Hello
+        p
+            b Test
+        h3 
+            i Testing
+        h3 Test  
+            |hello 
+            |sem-4 fsd2
+        h4(style="color:red;font-size:60px;") Pug example
+        ul(type="square")
+            li Mango
+            li Banana
+        a(href="/" target="_blank" style="color:purple") Home
+        // comma can also be done in between attributes
+        br
+        a(
+            href="/"
+            target="_blank"
+            style="color:pink"
+        ) Home
+        //buffered comment
+        //- unbuffered commment
+        //
+            multi
+            line 
+            comments
+        //
+            abc
+            xyz
+        pqr
+        br
+        br
+        table(style="border:1px solid black" rules="all")
+            tr 
+                th Roll no
+                th Name
+            tr
+                td 1
+                td a
+            tr 
+                td 2
+                td b
+            tr 
+                td 3
+                td c
+        //unbuffered code
+        -var num=3
+        -var color='black'
+        -var  list=["India","USA"]  
+        //buffered code
+        h4="Multiplication"+num*10
+        h2="color:"+color
+        p="coutry:"+list[0] 
